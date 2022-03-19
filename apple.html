@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Apple</title>
+    
+    <link rel="icon" type="" href="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png">
+</head>
+
+<body>
+
+    <section class="w-full px-3 bg-blue-600 lg:px-6">
+
+        <div class="mx-auto max-w-7xl">
+            <nav class="relative h-24 w-full z-50" x-data="{ showMenu: false }">
+
+                <div class="container relative flex flex-wrap justify-between items-center w-full h-24 font-medium mx-auto 
+                md:overflow-visible lg:justify-center sm:px-4 md:px-2 md:justify-center">
+
+                    <div class="flex items-center justify-start w-1/4 h-full pr-4 md:justify-start">
+                        <span class="p-1 pl-6 pr-4 md:pl-4 md:py-0 text-xl font-black text-white
+                        leading-none">Apple</span>
+                    </div>
+
+                        <div class="top-0 left-0 w-full h-full hidden p-4
+                        items-start text-sm bg-gray-900 bg-opacity-50 
+                        md:items-center md:text-sm lg:text-base md:w-3/4 md:bg-transparent md:p-0 md:relative md:flex"
+                        :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+
+                            <div class="flex-col w-full h-auto overflow-hidden rounded-lg bg-white select-none
+                            md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
+
+                                <a href="#"
+                                    class="inline-flex items-center w-auto h-16 px-6 text-xl font-black leading-none
+                                    text-gray-900 md:hidden">
+                                    Apple</a>
+
+                                <div class=" flex flex-col items-start justify-center w-full 
+                                md:text-gray-200 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+                                    <a href="#" 
+                                    class="inline-block px-4 py-2 mx-0 text-left text-black
+                                    hover:text-indigo-800 md:text-white lg:mx-3 md:text-center">iPhone</a>
+                                    <a href="#" 
+                                    class="inline-block px-4 py-2 mx-0 text-left text-black
+                                    hover:text-indigo-800 md:text-white lg:mx-3 md:text-center">iPad</a>
+                                    <a href="#" 
+                                    class="inline-block px-4 py-2 mx-0 text-left text-black
+                                    hover:text-indigo-800 md:text-white lg:mx-3 md:text-center">Mac</a>
+                                    <a href="#" 
+                                    class="inline-block px-4 py-2 mx-0 text-left text-black
+                                    hover:text-indigo-800 md:text-white lg:mx-3 md:text-center">Watch</a>
+                                </div>
+
+                                <div class="flex flex-col items-start justify-end w-full pt-4
+                                md:flex-row md:items-center md:w-1/3 md:py-0">
+                                    <a href="" class="w-full px-5 py-2 text-gray-700 
+                                    md:text-white md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto">
+                                        Sign In
+                                    </a>
+                                    <a href="" class="items-center w-full px-5 py-3 font-medium leading-4 text-white bg-blue-500
+                                    md:bg-white md:text-blue-500 md:rounded-full md:w-auto md:px-3 lg:px-5">
+                                        Sign Up
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+
+                    <div @click="showMenu = !showMenu"
+                        class="absolute right-4 flex flex-col items-center justify-center w-10 h-10 rounded-full cursor-pointer md:hidden">
+                        <svg class="w-6 h-6 text-white" x-show="!showMenu" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"
+                            x-cloak="">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x-cloak="">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </divs>
+                </div>
+            </nav> 
+
+            <div class="container py-32 mx-auto text-center sm:px-4">
+                <h1 class="text-4xl text-white font-extrabold leading-10 tracking-tight
+                sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl">
+                    <span class="block">The All New</span>
+                    <span class="inline-block mt-3">iPhone 14 Pro</span>
+                </h1>
+                <div class="text-gray-200 max-w-lg mt-6 text-center text-sm mx-auto
+                md:mt-12 md:max-w-xl sm:text-base md:text-lg">
+                A dramatically more powerful camera system. A display so responsive, every interaction feels new again. The world’s fastest smartphone chip. Exceptional durability. And a huge leap in battery life
+                </div>
+
+                <div class="relative flex items-center max-w-md mx-auto mt-12
+                overflow-hidden text-center rounded-full">
+                    <input type="email" placeholder="Email Address" 
+                    class="w-full h-12 px-6 py-2 font-medium focus:outline-none">
+                    <span class="relative top-0 right-0 block">
+                        <button type="button" class="inline-flex items-center w-40 h-12 px-8 text-white bg-blue-500 
+                        transition duration-150 ease-in-out focus:outline-none hover:bg-blue-400
+                                    text-base font-bold leading-6 border border-transparent">
+                            Order Now
+                        </button>
+                    </span>
+                </div>
+                <div class="text-gray-300 text-sm mt-8">
+                    By placing order, you agree to our Terms & Conditions.
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <section class="py-20 bg-gray-50">
+
+        <div class="container items-center max-w-6xl px-10 mx-auto
+        sm:px-20 md:px-32 lg:px-16">
+
+            <div class="flex flex-wrap items-center mx-3">
+
+                <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+
+                    <div class="w-full lg:max-w-md">
+                        <h2 class="mb-4 text-3xl font-bold leading-tight tracking-tight
+                        sm:text-4xl">
+                        Our Pro camera system gets its biggest upgrade ever.                           
+                        </h2>
+                        <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">
+                            With next-level hardware that captures so much more detail. Superintelligent software for new photo and filmmaking techniques.
+                        </p>
+                        <ul>
+                            <li class="flex items-center py-3 space-x-4 xl:py-3">
+                                <svg class="w-11" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 297 297" style="enable-background:new 0 0 297 297;" xml:space="preserve">
+                                    <g>
+                                        <path d="M268.338,64.67H203.56l-13.586-27.446c-1.667-3.368-5.101-5.499-8.858-5.499h-48.923c-3.758,0-7.19,2.131-8.857,5.499
+                                            L109.749,64.67H28.662C12.858,64.67,0,77.527,0,93.332v143.281c0,15.804,12.858,28.662,28.662,28.662h239.676
+                                            c15.804,0,28.662-12.858,28.662-28.662V93.332C297,77.527,284.142,64.67,268.338,64.67z M138.328,51.492h36.651l6.523,13.178
+                                            h-49.697L138.328,51.492z M268.338,84.437c4.905,0,8.896,3.99,8.896,8.896v20.261h-36.379
+                                            c-15.049-13.226-34.745-21.255-56.278-21.255c-21.534,0-41.232,8.029-56.28,21.255H19.767V93.332c0-4.905,3.99-8.896,8.896-8.896
+                                            H268.338z M184.576,244.056c-36.242,0-65.728-29.597-65.728-65.976s29.485-65.976,65.728-65.976
+                                            c36.239,0,65.724,29.597,65.724,65.976S220.815,244.056,184.576,244.056z M19.767,236.613V133.36h91.893
+                                            c-7.974,13.028-12.578,28.345-12.578,44.72c0,27.331,12.817,51.716,32.739,67.428H28.662
+                                            C23.757,245.508,19.767,241.518,19.767,236.613z M268.338,245.508h-31.009c19.922-15.712,32.737-40.097,32.737-67.428
+                                            c0-16.375-4.604-31.691-12.576-44.72h19.743v103.253C277.233,241.518,273.243,245.508,268.338,245.508z"/>
+                                        <path d="M184.576,127.988c-27.547,0-49.958,22.471-49.958,50.092s22.411,50.092,49.958,50.092
+                                            c27.545,0,49.955-22.471,49.955-50.092S212.121,127.988,184.576,127.988z M184.576,208.404c-16.648,0-30.191-13.604-30.191-30.324
+                                            s13.543-30.324,30.191-30.324c16.645,0,30.188,13.604,30.188,30.324S201.222,208.404,184.576,208.404z"/>
+                                    </g>
+                                    </svg>
+                                <span class="font-medium text-gray-500">Macro photography comes to iPhone</span>
+                            </li>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg class="w-11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0622 5.62003C11.6968 5.37151 9.313 5.35302 6.94412 5.56483L5.36233 5.70626C4.05519 5.82313 2.99904 6.82173 2.8092 8.12029C2.43307 10.693 2.43307 13.3068 2.8092 15.8795C2.99904 17.178 4.05519 18.1766 5.36233 18.2935L6.94412 18.4349C9.313 18.6467 11.6968 18.6283 14.0622 18.3797L14.6699 18.3159C15.914 18.1852 16.9206 17.2591 17.1629 16.0435L20.2098 17.6622C20.432 17.7802 20.6985 17.779 20.9196 17.659C21.1407 17.5389 21.2868 17.316 21.3088 17.0654L21.3337 16.7815C21.6126 13.5999 21.6126 10.3999 21.3337 7.21823L21.3088 6.93438C21.2868 6.68377 21.1407 6.46086 20.9196 6.3408C20.6985 6.22074 20.432 6.21952 20.2098 6.33756L17.1629 7.95632C16.9206 6.74067 15.914 5.8146 14.6699 5.68388L14.0622 5.62003ZM7.0777 7.05887C9.34996 6.8557 11.6366 6.87343 13.9054 7.11182L14.5131 7.17567C15.1247 7.23993 15.6149 7.71067 15.7039 8.31916C16.0607 10.76 16.0607 13.2398 15.7039 15.6806C15.6149 16.2891 15.1247 16.7598 14.5131 16.8241L13.9054 16.8879C11.6366 17.1263 9.34997 17.1441 7.0777 16.9409L5.49592 16.7995C4.88027 16.7444 4.38283 16.2741 4.29342 15.6625C3.93833 13.2337 3.93833 10.7661 4.29342 8.33728C4.38283 7.72567 4.88027 7.25534 5.49592 7.2003L7.0777 7.05887ZM17.3599 9.55021C17.5087 11.1799 17.5087 12.8198 17.3599 14.4496L19.9069 15.8027C20.0882 13.2707 20.0882 10.729 19.9069 8.19702L17.3599 9.55021Z" fill="black"/>
+                                    </svg>
+                                </svg>
+                                <span class="font-medium text-gray-500">You can also shoot macro videos</span>
+                            </li>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg class="w-11" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title>chip</title><path d="M11,11V21H21V11Zm8,8H13V13h6Z" transform="translate(0)"/><path d="M30,13V11H26V8a2,2,0,0,0-2-2H21V2H19V6H13V2H11V6H8A2,2,0,0,0,6,8v3H2v2H6v6H2v2H6v3a2,2,0,0,0,2,2h3v4h2V26h6v4h2V26h3a2,2,0,0,0,2-2V21h4V19H26V13ZM24,24H8V8H24Z" transform="translate(0)"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/></svg>
+                                <span class="font-medium text-gray-500">New chip powering for better low light shot</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div> 
+                
+                <div class="w-full px-5 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0">
+                    <img class="mx-auto sm:max-w-sm lg:max-w-full" 
+                    src="https://www.apple.com/v/iphone-13-pro/f/images/overview/design/water_resistant__ddhg6jxs53yq_medium.jpg" alt="">
+                </div>
+
+            </div> 
+
+        </div>
+    </section>
+
+    <section class="py-8 leading-7 text-gray-900 bg-white
+    sm:py-12 md:py-24 lg:py-32">
+        <div class="max-w-7xl box-border px-4 mx-auto border-solid
+        sm:px-6 md:px-6 lg:px-8">
+                <div class="flex flex-col items-center leading-7 text-center text-gray-900">
+
+                    <h2 class=" text-3xl font-semibold leading-tight tracking-tight
+                    sm:text-4xl md:text-5xl">
+                        Available Options
+                    </h2>
+                    <p class="mt-3 text-md sm:text-xl sm:mt-5"> 
+                        iPhone 14, iPhone 14 Pro, iPhone Pro Max
+                    </p>
+                </div>
+            
+            <div class="grid grid-cols-1 gap-4 mt-5 leading-7 text-gray-900 border-0 border-gray-200
+            sm:mt-6 sm:gap-6 md:mt-10 md:gap-0 lg:grid-cols-3">
+
+                <div class="relative z-10 flex flex-col items-center max-w-md mx-auto p-4 my-0 border border-solid rounded-lg
+                sm:p-6 md:my-8 md:p-8">
+                    <h3 class="text-2xl font-semibold leading-tight tracking-tight
+                    sm:text-3xl md:text-3xl">iPhone 14</h3>
+
+                    <p class="mt-8 leading-none text-5xl font-semibold">
+                        $799
+                    </p>
+                    <p class="my-6 text-base leading-normal">
+                        A total powerhouse.
+                    </p>
+                    <ul class="flex-1 mt-4 ml-5 md:ml-0">
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            6.1" All-screen OLED display
+                        </li>
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="-mt-6 lg:-mt-7 w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="w-2/3">Advanced dual-camera system Wide, Ultra Wide</p> 
+                        </li>
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            A15 Bionic Chip 4-core GPU
+                        </li> 
+                    </ul>
+                    <button class="inline-flex justify-center w-full text-sm mt-8 px-2 py-3
+                    leading-none text-blue-600 border border-blue-600 rounded-md 
+                    hover:bg-blue-600 hover:text-white focus-within:bg-blue-600 focus-within:text-white
+                    sm:text-base md:text-lg">
+                        Select Model
+                    </button>
+                </div>
+
+                <div class="relative z-20 flex flex-col items-center max-w-md mx-auto p-4 my-0 border-4 border-blue-600 border-solid rounded-lg
+                sm:p-6 md:py-16 md:px-8">
+                    <h3 class="text-2xl font-semibold leading-tight tracking-tight
+                    sm:text-3xl md:text-3xl">iPhone 14 Pro</h3>
+
+                    <p class="mt-8 leading-none text-5xl font-semibold">
+                        $999
+                    </p>
+                    <p class="my-6 text-base leading-normal">
+                        The Ultimate iPhone.
+                    </p>
+                    <ul class="flex-1 mt-4 ml-5 md:ml-0">
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            6.1" All-screen OLED display
+                        </li>
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="-mt-6 lg:-mt-7 w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="w-2/3">Pro Camera System Telephoto, Wide, Ultra Wide</p> 
+                        </li>
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            A15 Bionic Chip 6-core GPU
+                        </li> 
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            120 Hz ProMotion
+                        </li> 
+                    </ul>
+                    <button class="inline-flex justify-center w-full text-sm mt-8 px-2 py-3
+                    leading-none text-white border bg-blue-600 rounded-md 
+                    hover:bg-blue-700 focus-within:bg-blue-700 focus-within:text-white
+                    sm:text-base md:text-lg">
+                        Select Model
+                    </button>
+                </div> 
+
+                <div class="relative z-10 flex flex-col items-center max-w-md mx-auto p-4 my-0 border border-solid rounded-lg
+                sm:p-6 md:my-8 md:p-8">
+                    <h3 class="text-2xl font-semibold leading-tight tracking-tight
+                    sm:text-3xl md:text-3xl">iPhone 14 Pro Max</h3>
+
+                    <p class="mt-8 leading-none text-5xl font-semibold">
+                        $1099
+                    </p>
+                    <p class="my-6 text-base leading-normal">
+                        The Bigger Ultimate iPhone.
+                    </p>
+                    <ul class="flex-1 mt-4 ml-5 md:ml-0">
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            6.7" All-screen OLED display
+                        </li>
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="-mt-6 lg:-mt-7 w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <p class="w-2/3">Pro Camera System Telephoto, Wide, Ultra Wide</p> 
+                        </li>
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            A15 Bionic Chip 6-core GPU
+                        </li> 
+                        <li class="inline-flex items-center w-full text-left ml-5 mb-2 font-semibold">
+                            <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-blue-600 sm:h-5 sm:w-5 md:h-6 md:w-6"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            120 Hz ProMotion
+                        </li> 
+                    </ul>
+                    <button class="inline-flex justify-center w-full text-sm mt-8 px-2 py-3
+                    leading-none text-blue-600 border border-blue-600 rounded-md 
+                    hover:bg-blue-600 hover:text-white focus-within:bg-blue-600 focus-within:text-white
+                    sm:text-base md:text-lg">
+                        Select Model
+                    </button>
+                </div> <
+           </div> 
+        </div> 
+    </section>
+
+   <section class="py-16 bg-gray-100 md:mt-8">
+
+    <div class="px-8 mx-auto max-w-7xl lg:px-16">
+        
+            <img class="md:hidden mt-8" src="https://www.apple.com/v/iphone-13/f/images/overview/endcap/continuity/continuity__dbvefyorv90m_small.jpg" alt="">
+            <img class="hidden md:block mt-12 w-full mx-auto" src="https://www.apple.com/v/iphone-13/f/images/overview/endcap/continuity/continuity__dbvefyorv90m_large.jpg" alt="">
+        
+        <div class="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16">
+
+            <div>
+                <h2 class="mt-16 md:mt-28 text-3xl text-gray-900 font-bold md:text-4xl">Multiply the magic.</h2>
+            </div>
+
+            <div>
+                <p class="mt-10 text-xl font-semibold md:mt-16">Everything you love about your iPhone gets even better when you use it with a Mac, iPad, or Apple Watch. It all just works together — seamlessly. Answer a call on whatever is close at hand. Take a photo on your iPhone and watch it instantly appear on your Mac. And see all your texts, all the time, on all your devices. Easy.</p>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section class="mt-8 py-16 bg-gray-100 md:mt-8">
+
+    <div class="px-8 mx-auto max-w-7xl lg:px-16">
+        
+            <img class="md:hidden mt-8" src="https://www.apple.com/v/iphone-13-pro/f/images/overview/appleone-continuity/appleone__b71ksnaqck2u_small.jpg" alt="">
+            <img class="hidden md:block mt-12 w-full mx-auto" src="https://www.apple.com/v/iphone-13-pro/f/images/overview/appleone-continuity/appleone__b71ksnaqck2u_large.jpg" alt="">
+        
+        <div class="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16">
+
+            <div>
+                <h2 class="mt-16 md:mt-28 text-3xl text-gray-900 font-bold md:text-4xl">A phoneful of fun.</h2>
+            </div>
+
+            <div>
+                <p class="mt-10 text-xl font-semibold md:mt-16">Stream songs, albums, and curated playlists. Catch the shows everyone is raving about. Discover exciting new games. Keep up on the news and stories you love. Find your next favorite workout. Apple services put so much at your fingertips, and Apple One bundles them all into a simple subscription.</p>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+   <section class="py-12 md:py-20">
+        <div class="px-8 mx-auto max-w-7xl lg:px-16">
+
+            <h2 class="text-2xl font-semibold text-center mb-4 md:text-3xl">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 gap-0 text-gray-600 md:grid-cols-2 md:gap-16">
+                <div>
+                    <h5 class="mt-10 mb-3 text-gray-900 font-semibold">
+                        Will my new iPhone be unlocked?
+                    </h5>
+                    <p>
+                        Every iPhone you buy from us online or in an Apple Store is unlocked, with the exception of a few carrier financing options. 
+                    </p>
+                    <h5 class="mt-10 mb-3 text-gray-900 font-semibold">
+                        Should I buy with Apple Card?
+                    </h5>
+                    <p>
+                        Definitely. You’ll get 3% Daily Cash back on the purchase of your new iPhone and any accessories when you buy from Apple.
+                    </p>
+                    <h5 class="mt-10 mb-3 text-gray-900 font-semibold">
+                        Can I trade in my old phone?
+                    </h5>
+                    <p>
+                        Absolutely. We offer competitive trade‑in values that you can use to lower the cost of your new iPhone, or get back on a gift card.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="mt-10 mb-3 text-gray-900 font-semibold">
+                        Can you help me set up my new iPhone?
+                    </h5>
+                    <p>
+                        You bet. Whether you buy online or in an Apple Store, it’s quick and easy to get your new iPhone set up the way you like. 
+                    </p>
+                    <h5 class="mt-10 mb-3 text-gray-900 font-semibold">
+                        Is all my information safe?
+                    </h5>
+                    <p>
+                        Totally. We take privacy very seriously at Apple. What’s on your iPhone is your business.
+                    </p>
+                    <h5 class="mt-10 mb-3 text-gray-900 font-semibold">
+                        What if I want a new iPhone every year?
+                    </h5>
+                    <p>
+                        We have an option for that. With the iPhone Upgrade Program, you can get the latest iPhone every year with AppleCare+ coverage included.
+                    </p>
+                </div>
+            </div>
+        </div>
+   </section>
+    
+   <section class="bg-gray-100">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8  sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center">
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    iPhone
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    iPad
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Macbook
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    iMac
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Airpods
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Watch
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Apple TV
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-8 gap-6">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                    </path>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Youtube</span>
+                <svg class="w-6 h-6" fill="currentColor" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                    <g id="XMLID_822_">
+                        <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
+                            C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
+                            C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
+                            c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764
+                            c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861
+                            C204.394,157.263,202.325,160.684,199.021,162.41z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2022 Apple Inc. All rights reserved.
+        </p>
+    </div>
+    </section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+
+</html>
